@@ -1,7 +1,7 @@
 vm:
   box-default: trusty64
 #  hostname: specify7.biodiversity.agr.gc.ca
-  hostname: northern2149860.agr.gc.ca
+  hostname: specify.agr.gc.ca
   memory: 4096
   cpus: 2
   provider:
