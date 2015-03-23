@@ -30,8 +30,8 @@ pip install -r specify7/requirements.txt
 
 ln -sf /vagrant/specify_settings.py specify7/specifyweb/settings/local_specify_settings.py
 ln -sf /vagrant/specifyweb_apache.conf specify7/local_specifyweb_apache.conf
-ln -sf /vagrant/specify_settings.py specify7/specifyweb/settings/specify_settings.py
-ln -sf /vagrant/specifyweb_apache.conf specify7/specifyweb_apache.conf
+cp /vagrant/specify_settings.py specify7/specifyweb/settings/specify_settings.py
+cp /vagrant/specifyweb_apache.conf specify7/specifyweb_apache.conf
 make -C specify7/specifyweb clean
 make -C specify7/specifyweb
 
