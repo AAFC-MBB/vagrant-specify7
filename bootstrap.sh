@@ -38,7 +38,7 @@ make -C specify7/specifyweb
 
 
 rm /etc/apache2/sites-enabled/*
-ln -sf /vagrant/local_specifyweb_apache.conf /etc/apache2/sites-enabled/
+ln -sf /vagrant/specifyweb_apache.conf /etc/apache2/sites-enabled/
 chown -R www-data:www-data /home/vagrant/specify7
 
 service apache2 start
