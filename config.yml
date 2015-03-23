@@ -1,0 +1,21 @@
+vm:
+  box-default: trusty64
+#  hostname: specify7.biodiversity.agr.gc.ca
+  hostname: northern2149860.agr.gc.ca
+  memory: 4096
+  cpus: 2
+  provider:
+    libvirt:
+      box: trusty64
+  networking:
+    type: private # private: forward traffic through host IP.  public: provide VM with its own IP.
+    public:
+      bridge: bond0 # Device to bridge on the host
+      ip: 10.128.124.131 # IP of VM
+      gateway: 10.128.124.1 #  Gateway for the above IP
+      dns: 10.117.10.52 # DNS server - only 1 entry supported
+    private:
+      port-forward: #ports to forward guest-port: host-port
+        80: 4567
+        22: 10022
+  
