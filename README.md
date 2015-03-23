@@ -108,7 +108,7 @@ Vagrant creates a bridge interface to a logical device on the host (Hypervisor) 
 
 The following contributors have dedicated the time and effort to make this possible.
 
-Allan Joneshttps://github.com/AAFC-MBB/vagrant-specify7/wiki
+Allan Jones 
 Agriculture & Agri-Foods Canada
 
 Iyad Kandalaft
